@@ -1,0 +1,35 @@
+import java.io.File;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class WeatherDisplay {
+	
+	public static void main(String[] args) {
+		W_Info[] dataValues;
+		
+		int size;
+		
+		Scanner dataFile = new Scanner(new File("W_Info.dat"));
+		
+		size = dataFile.nextInt();
+		
+		dataValues = new W_Info[size];
+		
+		for (int i = 0; i < size; i++) {
+			double lowTemp = dataFile.nextDouble();
+			double highTemp = dataFile.nextDouble();
+			dataValues[i] = new W_Info(lowTemp, highTemp);
+		}
+		
+		
+		String menu = "Please choose an option\n";
+		
+		menu += "1. For printing the temperature\n";
+		menu += "2. For printing the day with the highest temperature\n";
+		menu += "3. For printing the day with the lowest temperature\n";
+		
+		JOptionPane.showMessageDialog(null, menu);
+	}
+
+}

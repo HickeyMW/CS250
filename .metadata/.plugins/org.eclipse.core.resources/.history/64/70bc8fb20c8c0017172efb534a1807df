@@ -1,0 +1,35 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+/*
+ * Matthew Hickey
+ * 
+ * 
+ * Application that uses long numbers
+ * 
+ * 
+ */
+public class LongNumberApp {
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		Scanner dataFile = new Scanner(new File("numbers.dat"));
+		
+		int size = dataFile.nextInt();
+		
+		LongNumber[] numbers = new LongNumber[size]; // creating an array of LongNumber
+		
+		for (int i = 0; i < size; i++) {
+			numbers[i] = new LongNumber(dataFile.next());
+		}
+		
+		for (int i = 0; i < size; i++) {
+			System.out.println(numbers[i].toString());
+		}
+		
+		
+
+	}
+
+}

@@ -1,0 +1,29 @@
+/*
+ * This will display GUI for lab 3A
+ * 
+ * 
+ */
+
+package Lab3A;
+
+import javax.swing.JFrame;
+
+public class MyGui extends JFrame { // The MyGui object is a window (JFrame)
+
+	Listener myListener;
+	
+	public MyGui() {
+		this.setSize(300, 300);
+		
+		this.setVisible(true);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+	}
+	
+	public void setListener(Listener listener) {
+		
+		myListener = listener;
+	}
+
+}

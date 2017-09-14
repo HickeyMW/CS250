@@ -1,0 +1,18 @@
+/*
+ * The list
+ * 
+ * 
+ */
+package Lab3A;
+
+public class Listener {
+	
+	MyGui myGui;
+
+	public void setGUi(MyGui gui) {
+		
+		myGui = gui;
+		
+	}
+
+}

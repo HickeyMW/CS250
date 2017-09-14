@@ -1,0 +1,18 @@
+/*
+ * This will display GUI for lab 3A
+ * 
+ * 
+ */
+
+package Lab3A;
+
+public class myGui {
+
+	Listener myListener;
+	
+	public void setListener(Listener listener) {
+		
+		myListener = listener;
+	}
+
+}
