@@ -61,7 +61,7 @@ public class Listener implements ActionListener{
 		} else if (text == "Cube") {
 			int input = Integer.parseInt(myGui.input.getText());
 			double outputvalue = input*input*input;
-			String outputString = String.format("The natural log of %d = %.2f", input, outputvalue);
+			String outputString = String.format("The cube of %d = %.2f", input, outputvalue);
 			myGui.output.setText(outputString);
 		}
 		
